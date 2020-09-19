@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-signup">
+        <h1 id="main-head-signup">SHOP STATZ</h1>
+        <img src="main.png" alt="use of site">
+    </div>
+    <div id="signup-form">
+        <form class="form-control" id="signupform">
+            <div id="signUp-1">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="full-name" required>
+                <label for="validation">Phone / Email</label>
+                <input type="text" name="validation" id="validation" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <button class ="sign-up-cta" id="signup-1" type="button">NEXT </button>
+    
+            <button id ="sign-up-google" type="button">or Sign Up With Google</button>
+            </div>
+        <div id="signUp-2">
+            <label for="shopName">Shop Name</label>
+            <input type="text" name="shopName" id="shop-name">
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="default">Select Category:</option>
+                <option value="grocery">Grocery</option>
+                <option value="medical">Medical</option>
+                <option value="variety">Variety</option>
+                <option value="stationery">Stationery</option>
+                <option value="cloth">Clothes</option>
+                <option value="shoes">Shoes</option>
+                <option value="electronics">Electronics</option>
+                <option value="utensils">Utensils</option>
+            </select>
+            <label for="address">Shop Address</label>
+            <fieldset id="address">
+                <label for="addressOne">Street Name</label>
+                <input type="text" name="addressOne" id="address-one" required >
+                <label for="addressTwo">Building Name</label>
+                <input type="text" name="addressTwo" id="address-two">
+                <label for="addressThree">Shop Number</label>
+                <input type="text" name="addressThree" id="address-three">
+                <label for="addressFour">Locality</label>
+                <input type="text" name="addressFour" id="address-four" required >
+                <label for="pinCode">Pin Code</label>
+                <input type="number" name="pinCode" id="pin-code" required>
+            </fieldset>
+            <button class ="sign-up-cta" id="signup-2">NEXT </button>
+        </div>
+        <div id="signUp-3">
+            <label for="openTimings">Daily Open Timings</label>
+            <fieldset id="timing">
+                <label for="firstHalf">First Half</label>
+                <div class="timeDiv">
+                    <span class="from">From</span>
+                    <input type="time" name="fromFirst" id="firstOpenFrom" required>
+                </div>
+                <div class="timeDiv">
+                    <span class="from">To</span>
+                    <input type="time" name="toFirst" id="firstOpenTo" required>
+                </div>
+                <label for="secondHalf">Second Half</label>
+                <div class="timeDiv">
+                    <span class="from">From</span>
+                    <input type="time" name="fromSecond" id="secondOpenFrom" required>
+                </div>
+                <div class="timeDiv">
+                    <span class="from">To</span>
+                    <input type="time" name="toSecond" id="secondOpenTo" required>
+                </div>
+            </fieldset>
+            <label for="closed">Closed Days</label>
+            <fieldset id="closed" role="checkbox">
+               <div class="closedDiv">
+                <input type="checkbox" id="monday" name="closedDay" value="monday">
+                <label for="monday">Monday</label>
+               </div>
+               <div class="closedDiv">
+                <input type="checkbox" id="tuesday" name="closedDay" value="tuesday">
+                <label for="tuesday">Tuesday</label>
+               </div>
+               <div class="closedDiv">
+                <input type="checkbox" id="wednesday" name="closedDay" value="wednesday">
+                <label for="wednesday">Wednesday</label>
+               </div>
+               <div class="closedDiv">
+                <input type="checkbox" id="thursday" name="closedDay" value="thursday">
+                <label for="thursday">Thursday</label>
+               </div>
+               <div class="closedDiv">
+                <input type="checkbox" id="friday" name="closedDay" value="friday">
+                <label for="friday">Friday</label>
+               </div>
+               <div class="closedDiv">
+                <input type="checkbox" id="saturday" name="closedDay" value="saturday">
+                <label for="saturday">Saturday</label>
+               </div>
+               <div class="closedDiv">
+                <input type="checkbox" id="sunday" name="closedDay" value="sunday">
+                <label for="sunday">Sunday</label>
+               </div>
+            </fieldset>
+            <label for="closedTimings">Closed Timing</label>
+            <fieldset id="closedtiming">
+                <div class="timeDiv">
+                    <span class="closedFrom">From</span>
+                    <input type="time" name="closeFrom"id="closedFrom">
+                </div>
+                <div class="timeDiv">
+                    <span class="closedTo">To</span>
+                    <input type="time" name="closeTo" id="closeTo">
+                </div>                
+            </fieldset>
+            </div>
+            <button class ="sign-up-cta" type="button" id="finishSignUp">FINISH</button>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>

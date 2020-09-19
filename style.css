@@ -1,0 +1,295 @@
+/* 
+deep-blue : #05386B
+greyish-green : #379683
+emerald : #5CDB95
+light-emerald : #8EE4AF
+light-grey : #EDF5E1
+*/
+html {
+    margin: 0;
+    padding: 0 2%;
+    text-align: center;
+    align-content: center;
+    overflow-x: hidden;
+    background-color: #EDF5E1;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    height: 90vh;
+    width: 90vw;
+}
+#header, #header-signup{
+    width: 70vw;
+    height: 20vh;
+    text-align: left;
+    padding: 10px 0 5px 40px;
+    margin: 0;
+}
+#header-signup {
+    height: 30vh;
+    padding-left: 5.3rem;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    position: relative;
+}
+#main-head {
+    font-size: 2rem;
+    line-height: 0.6;
+    color: #05386B;
+}
+#main-head-signup {
+    color : #5CDB95;
+    font-size: 2rem;
+    border-radius: 30%;
+    position : absolute; 
+    top: -1.8rem;  
+    left: 5rem;
+    z-index: 1;
+}
+#desc-head {
+    font-size: 1.2rem;
+    color : #379683;
+    font-family: 'Play', sans-serif;
+}
+.illustration {
+    height: 60vh;
+    width: 85vw;
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+}
+.illustration img, #header-signup img  {
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow( 0 0 7px #379683);
+}
+.form-control {
+    width: 70vw;
+    height: 40vh;
+    padding: 2% 12%;
+}
+.form-control label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #05386B;
+}
+.form-control fieldset {
+    outline: none;
+    border: none;
+}
+.form-control input, #signUp-2 select {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 3px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    outline: none;
+    border: 2px solid #05386b56;
+    border-radius: 8px;
+    margin: 0 0 12px 0;
+}
+#signUp-2 select {
+    height: 2rem !important;
+    font-size: 1rem;
+    padding: 5px;
+    background-color:  #8EE4AF;
+    color: #fff;
+}
+#signUp-2 option {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+}
+.form-control input:focus, #signUp-2 select:focus {
+    border: 4px solid #05386bbd;
+}
+.sign-up-cta , #sign-up-google{
+    width: 70vw;
+    height: 3rem;
+    border-radius: 2.5rem;
+    border: none;
+    font-family: 'Play', sans-serif;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.747),
+    8px 8px 10px #8ee4afcc;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background-color: #5CDB95;
+    color: #05386B;
+    outline: none;
+}
+.sign-up-cta a {
+    text-decoration: none;
+    color: #05386B;
+}
+.sign-up-cta a:active {
+    color: #5CDB95;
+}
+.sign-up-cta a:visited p:after {
+    color:#05386B ;
+}
+.form-control .sign-up-cta {
+    margin: 2rem 0 3rem;
+}
+.sign-up-cta:hover {
+    cursor: pointer;
+}
+.sign-up-cta:active { 
+    color: #5CDB95;
+    background-color: #EDF5E1;
+}
+#pin-code::after {
+    color: #5CDB95;
+    content : "Compulsory!"
+}
+.login {
+    color: #05386B;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+}
+.login a{
+    text-decoration: none;
+    color: #05386B;
+}
+#sign-up-google {
+    background-color: #bebebe;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 8px 8px 10px #8d8d8dcc;;
+}
+#sign-up-google:active {
+    background-color: #808080;
+}
+#signUp-2, #signUp-3 {
+    display: none;
+}
+
+#signUp-3 span {
+    color: #05386B;
+    float: left;
+    padding-right: 1.2rem;
+}
+.timeDiv {
+    display: inline-block;
+    width: 40%;
+}
+.form-control input[type=time] {
+    background-color: #d5ddc9;
+    width: 60%;
+}
+#signUp-3 .closedDiv {
+    text-align: left;
+}
+#signUp-3 .closedDiv label{
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 1.2rem;
+    /* width: 100%; */
+}
+#signUp-3 .closedDiv input[type=checkbox]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+#finishSignUp {
+    display: none;
+}
+
+@media screen and (min-width : 650px) {
+
+    #header {
+        padding: 10px 0 5px 80px;
+    }
+    #main-head {
+        font-size: 3rem;
+    }
+    .illustration {
+        width: 70vw;
+        align-items: center;
+        padding: 0 10%;
+    }
+    .form-control .sign-up-cta {
+        position: static;
+        width: 70vw;
+    }
+    #sign-up-google {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width : 1000px){
+    html {
+        padding-left: 0;
+    }
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 35vw 65vw;
+    }
+    #header {
+        width : 40vw;
+        float : left;
+       padding: 5rem 10px 20px 35px;
+    }
+    #main-head {
+        font-size: 3rem;
+    }
+    #desc-head {
+        font-size: 1.5rem;
+    }
+    .illustration {
+        width: 45vw;
+        height: 80vh;
+        float: left;
+        padding: 10px 10%;
+        margin: 0;
+    }
+    #signUp-2 select {
+        width: 70%;
+    }
+    #bottom-ctas {
+        position: relative;
+        bottom: 15rem;
+    }
+    .sign-up-cta {
+        width: 35vw;
+        height: 3rem;
+    }
+    #header-signup {
+        padding: 1rem 2rem 2rem 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    #header-signup img {
+        padding: 10rem 1rem;
+        width: 90%;
+        height: 50vh;
+    }
+    #signup-form {
+        width: 90%;
+        height: 90%;
+    }
+    .form-control {
+        width: 90%;
+        height: 50%;
+        padding: 5rem 1.5rem 1.5rem 9rem;
+        align-content: center;
+    }
+    .form-control input {
+        width: 70%;
+    }
+    .form-control .sign-up-cta, #sign-up-google {
+        width: 70%;
+        float: left;
+    } 
+    #sign-up-google {
+        margin-left: 8.9rem;
+        width: 63% ;
+    }
+    #signUp-3 .closedDiv {
+        width: 50%;
+        float: left;
+    }
+}
